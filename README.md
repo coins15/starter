@@ -12,10 +12,14 @@
 
 2.公開鍵をGithubに登録する
 
-* 自分のSettings&rarr;SSH and GPG keysにて\[New SSH key\]にhoge.pubの内容をそのまま書き込む
+* 自分のSettings&rarr;SSH and GPG keysにて \[New SSH key\] にhoge.pubの内容をそのまま書き込む
 
 3.秘密鍵とかidentifyする
 
 `ssh-add ~/.ssh/hoge`
 
 * Gitの使い方とかに関しては自分で調べてね
+
+## 二段階認証してる人がログインできない問題
+
+* パスワードにSettings&rarr;Personal access tokensにて \[Generate new token\] で生成したトークンを入れる
