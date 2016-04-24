@@ -28,10 +28,12 @@
 
 * 生成物が入ったフォルダで以下のコマンドを叩く
 
+```
 	git init
 	git add ./うpしたいもの
 	git commit -m "ここに雑なコメント"
 	git remote add origin git@github.com:coins15/リポジトリ名.git
 	git push -u origin master
+```
 
 最後のコマンドでこける場合は前述の設定を見直してください。
