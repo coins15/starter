@@ -24,16 +24,28 @@
 
 * パスワードにSettings&rarr;Personal access tokensにて \[Generate new token\] で生成したトークンを入れる
 
-## とりあえず生成物を上げたい(gitコマンドでやる方法)
-
-* 生成物が入ったフォルダで以下のコマンドを叩く
+## コミットしていく方法
 
 ```
-	git init
-	git add ./うpしたいもの
-	git commit -m "ここに雑なコメント"
-	git remote add origin git@github.com:coins15/リポジトリ名.git
-	git push -u origin master
+        <u>クローンを作る</u>
+    git clone https://github.com/coins15/ぽよぽよ
+    ディレクトリ「ぽよぽよ」に入る
+        <u>あなたのブランチを作る</u>
+    git checkout -b あなたの名前等
+    ファイルの編集作業を行う
+        <u>「ぽよぽよ」内のファイルをステージに追加する</u>
+    git add .
+        <u>あなたのブランチにコミットする</u>
+    git commit -m "ここに雑なコメント"
+        <u>GitHubにあなたのブランチを誕生させ、そこにファイルをコミットする</u>
+    git push origin あなたの名前等(checkoutしたのと一緒)
 ```
 
 最後のコマンドでこける場合は前述の設定を見直してください。
+
+## とりあえず生成物を上げたい
+
+```
+    自分のブランチを作る(Switch branches -> create a branch)
+    Upload Filesから上げたいファイルを選択
+```
